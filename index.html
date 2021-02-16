@@ -1,0 +1,44 @@
+<!-- Brenda's To do List with JavaScript-->
+<!--Elements for the program:
+-Check button
+-uncheck button
+-Refresh botton
+-Add botton
+-Delete button
+-List for elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!-- will have tags that are essentital. Ex: page, title, metadata, int/ext CSS & JS. 
+        Stuff that doesn't appear directly on the page-->
+        <meta charset="UTF-8">
+        <title> To Do List</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"> <!--Links all the CSS files and link for the font of google -->
+        <link rel="stylesheet" href="css/font-awesome.css"> <!--For icons, such as check marks and refresh botton -->
+        <link rel="stylesheet" href="css/style.css"> <!--Own CSS style -->
+   
+    </head>
+
+    <body> <!--Contains content of the page, the VISIBLE stuff -->
+        <div class="container"> <!--NOTE: .container + ENTER does the syntax automatically -->
+            
+            <div class="header">
+                <div class="clear"> <!-- Clear botton -->
+                    <i class="fa fa-refresh"></i>
+                </div>
+                <h1>To-Do List in JavaScript</h1>
+                <div id="date"></div>
+            </div>
+        
+            <div class="content">
+                <ul id="list"> <!--Unordered list -->
+                </ul>
+            </div>
+            <div class="add-to-do"><!-- Add-to-do button -->
+                <i class="fa fa-plus-circle"></i>
+                <input type="text" id="input" placeholder="Add a task...">  <!--This is where user submits task-->
+            </div>
+        </div>
+        <script src="js/app.js"></script> <!-- Link script to document-->
+    </body>
+</html>
